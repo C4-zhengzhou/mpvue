@@ -1,22 +1,16 @@
-import Vue from 'vue'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
-{{#router}}
-import MpvueRouterPatch from 'mpvue-router-patch'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
-{{/router}}
-import App from '@/App'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
-{{#vuex}}
-import store from '@/store'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
-{{/vuex}}
+import Vue from 'vue'
+import MpvueRouterPatch from 'mpvue-router-patch'
+import App from '@/App'
+import store from '@/store'
 import flyio from './utils/flyio'
 
 Vue.prototype.$http = flyio
-{{#router}}
-Vue.use(MpvueRouterPatch){{#if_eq lintConfig "airbnb"}};{{/if_eq}}
-{{/router}}
-Vue.config.productionTip = false{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
+Vue.use(MpvueRouterPatch)
+Vue.config.productionTip = false
 
 const app = new Vue({
-  mpType: 'app',{{#vuex}}
-  store,{{/vuex}}
-  ...App{{#if_eq lintConfig "airbnb"}},{{/if_eq}}
-}){{#if_eq lintConfig "airbnb"}};{{/if_eq}}
-app.$mount(){{#if_eq lintConfig "airbnb"}};{{/if_eq}}
+  mpType: 'app',
+  store,
+  ...App
+})
+app.$mount()

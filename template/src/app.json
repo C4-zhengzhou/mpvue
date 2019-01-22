@@ -1,7 +1,6 @@
 {
   "pages": [
-    "pages/index",{{#vuex}}
-    "pages/counter",{{/vuex}}
+    "pages/index",
     {
       "path": "packageA/logs",
       "subPackage": true

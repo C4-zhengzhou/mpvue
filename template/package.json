@@ -33,6 +33,7 @@
     "pug": "^2.0.3",
     "less": "^3.8.1",
     "less-loader": "^4.1.0",
+    "sass-resources-loader": "^2.0.0",
     "px2rpx-loader": "^0.1.0",
     {{#lint}}
     "babel-eslint": "^8.2.0",

@@ -34,17 +34,6 @@ module.exports = {
   },
   module: {
     rules: [
-      {{#lint}}
-      {
-        test: /\.(js|vue)$/,
-        loader: 'eslint-loader',
-        enforce: 'pre',
-        include: resolve('src'),
-        options: {
-          formatter: require('eslint-friendly-formatter')
-        }
-      },
-      {{/lint}}
       {
         test: /\.vue$/,
         loader: 'mpvue-loader',
@@ -101,13 +90,13 @@ module.exports = {
         to: path.resolve(__dirname, '../dist/static'),
         ignore: ['.*']
       }
-    ]){{#vant}},
-    new CopyWebpackPlugin([
-      {
-        from: resolve('node_modules/vant-weapp/dist'),
-        to: resolve('dist/vant-weapp/dist'),
-        ignore: ['.*']
-      }
-    ]){{/vant}}
+    ]),
+    // new CopyWebpackPlugin([
+    //   {
+    //     from: resolve('node_modules/vant-weapp/dist'),
+    //     to: resolve('dist/vant-weapp/dist'),
+    //     ignore: ['.*']
+    //   }
+    // ])
   ]
 }
