@@ -6,7 +6,9 @@ import App from '@/App'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 {{#vuex}}
 import store from '@/store'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 {{/vuex}}
+import flyio from './utils/flyio'
 
+Vue.prototype.$http = flyio
 {{#router}}
 Vue.use(MpvueRouterPatch){{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 {{/router}}

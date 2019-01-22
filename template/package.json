@@ -11,9 +11,11 @@
     "lint": "eslint --ext .js,.vue src"{{/lint}}
   },
   "dependencies": {
-    "mpvue": "^1.0.0"{{#vant}},
+    "flyio": "^0.6.2",
+    "mpvue-wxparse": "^0.6.5",
+    "mpvue": "^1.0.11"{{#vant}},
     "vant-weapp": "^0.4.0"{{/vant}}{{#vuex}},
-    "vuex": "^3.0.0"{{/vuex}}
+    "vuex": "^3.0.1"{{/vuex}}
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
@@ -28,6 +30,9 @@
     "postcss-loader": "^2.1.0",
     "postcss-mpvue-wxss": "^1.0.0",
     "prettier": "~1.12.0",
+    "pug": "^2.0.3",
+    "less": "^3.8.1",
+    "less-loader": "^4.1.0",
     "px2rpx-loader": "^0.1.0",
     {{#lint}}
     "babel-eslint": "^8.2.0",
@@ -76,12 +81,12 @@
     "webpack-mpvue-asset-plugin": "^0.1.0"
   },
   "engines": {
-    "node": ">= 4.0.0",
-    "npm": ">= 3.0.0"
+    "node": ">= 10.0.0",
+    "npm": ">= 6.0.0"
   },
   "browserslist": [
     "> 1%",
     "last 2 versions",
-    "not ie <= 8"
+    "not ie <= 10"
   ]
 }

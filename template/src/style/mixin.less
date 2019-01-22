@@ -1,0 +1,80 @@
+.lh(@height:1.75em) {
+  line-height: @height;
+}
+.hh(@height:1.75em) {
+  line-height: @height;
+  height: @height;
+}
+.width(@size) {
+  width: @size;
+}
+.size(@size:14px) {
+  font-size: @size;
+}
+.color(@color:@primary) {
+  color: @color;
+}
+.color-bg(@color:@bg) {
+  background-color: @color;
+}
+.center {
+  text-align: center;
+}
+.pointer{
+  cursor: pointer;
+}
+.inline {
+  display: inline-block;
+}
+.bold{
+  font-weight: bold;
+}
+.wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.trans(@time:0.3s) {
+  transition: all ease @time;
+}
+.rounded(@size:50px) {
+  width: @size;
+  height: @size;
+  // line-height: @size;
+  text-align: center;
+  border-radius: 50%;
+}
+.vtop {
+  vertical-align: top;
+}
+.vmid {
+  vertical-align: middle;
+}
+.radius(@size:10px) {
+  border-radius: @size;
+}
+.border(@color:@border) {
+  border: 0px solid @color;
+  border-radius: 8px;
+}
+.border-left(@color:@border) {
+  border-left: 1px solid @color;
+}
+.border-right(@color:@border) {
+  border-right: 1px solid @color;
+}
+.border-top(@color:@border) {
+  border-top: 1px solid @color;
+}
+.border-bottom(@color:@border) {
+  border-bottom: 1px solid @color;
+}
+.em{
+  .color;
+  display: inline;
+}
+.oh{
+  overflow: hidden;
+}
