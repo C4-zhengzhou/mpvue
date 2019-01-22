@@ -22,6 +22,7 @@ $ npm run dev
 * 引入 mpvue-router-patch，支持使用类 vue-router 的 api
 * 引入 vant-weapp，全局配置原生组件库，快速搭建页面
 * 支持官方分包（mpvue-loader@^1.1.0），简化配置方式
+* 引入 less, pug
 
 ## 详细文档请查阅
 
