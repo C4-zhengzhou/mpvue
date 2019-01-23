@@ -20,7 +20,6 @@ $ npm run dev
 - 引入 mpvue-entry，移除冗余的 main.js 文件
 - 引入 mpvue-config-loader，支持在 vue 文件中书写页面配置
 - 引入 mpvue-router-patch，支持使用类 vue-router 的 api
-- 引入 vant-weapp，全局配置原生组件库，快速搭建页面
 - 支持官方分包（mpvue-loader@^1.1.0），简化配置方式
 - 引入 less, 以及 mixin、theme 全局变量自动引入
 - 引入 iconfont, 全局自动引入
@@ -32,4 +31,6 @@ $ npm run dev
 - [mpvue-entry](https://github.com/F-loat/mpvue-entry)
 - [mpvue-config-loader](https://github.com/F-loat/mpvue-config-loader)
 - [mpvue-router-patch](https://github.com/F-loat/mpvue-router-patch)
-- [vant-weapp](https://youzan.github.io/vant-weapp)
+- [mpvue-toast](https://github.com/linrui1994/mpvue-toast)
+- [mpvue-picker](https://github.com/MPComponent/mpvue-picker)
+- [mpvue-animated-number](https://github.com/gaomd/mpvue-animated-number)
